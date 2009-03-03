@@ -33,9 +33,9 @@ RTorrentIO::~RTorrentIO()
 {
 	if(!--InstanceCount)
 	{
-		terminate ();
+		//terminate ();
 		quit();
-		delete client;
+		//delete client;
 	}
 }
 
@@ -51,6 +51,7 @@ void RTorrentIO::run(){
 		client->setHost(hostname,port,path);
 	}
 	exec();
+	delete client;
 }
 
 Client * RTorrentIO::client =0;
