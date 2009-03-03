@@ -44,5 +44,5 @@ SOURCES = src/mainimpl.cpp \
  src/traymenu.cpp \
  src/rtorrent/ritorrent.cpp \
  src/settingsdialog.cpp
-TRANSLATIONS += rwin_ru.ts
+TRANSLATIONS += Resources/rwin_ru.ts
 RESOURCES += Resources/res.qrc
