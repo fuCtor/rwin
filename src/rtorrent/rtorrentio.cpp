@@ -32,10 +32,9 @@ RTorrentIO::RTorrentIO(QObject *parent, const QString & hostname, quint16 port ,
 RTorrentIO::~RTorrentIO()
 {
 	if(!--InstanceCount)
-	{
-		//terminate ();
+	{		
 		quit();
-		//delete client;
+		wait();
 	}
 }
 
@@ -47,11 +46,12 @@ Client * RTorrentIO::operator ->()
 void RTorrentIO::run(){
 	if(InstanceCount == 1)
 	{
-		client = new Client(parent());
+		client = new Client();
 		client->setHost(hostname,port,path);
 	}
 	exec();
 	delete client;
+	client = 0;
 }
 
 Client * RTorrentIO::client =0;
