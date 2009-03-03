@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/img" >
+        <file>close.png</file>
+        <file>down.png</file>
+        <file>erase.png</file>
+        <file>error.png</file>
+        <file>exit.png</file>
+        <file>gear.png</file>
+        <file>msg.png</file>
+        <file>open.png</file>
+        <file>rehash0.png</file>
+        <file>rehash1.png</file>
+        <file>state1.png</file>
+        <file>state2.png</file>
+        <file>stop.png</file>
+        <file>up.png</file>
+        <file>update.png</file>
+        <file>updown.png</file>
+    </qresource>
+    <qresource prefix="/lang" >
+        <file>rwin_ru.qm</file>
+    </qresource>
+</RCC>
