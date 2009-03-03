@@ -5,7 +5,7 @@ DESTDIR = bin
 OBJECTS_DIR = build
 MOC_DIR = build
 UI_DIR = build
-FORMS = ui/main.ui ui/settingsdialog.ui
+FORMS = ui/settingsdialog.ui
 HEADERS = src/mainimpl.h \
  src/xmlrpc/client.h \
  src/xmlrpc/qxmlrpc_documentation.h \
